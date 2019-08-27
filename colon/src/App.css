@@ -1,33 +1,76 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #af9a7d;
+  --mainWhite: #fff;
+ --mainDark:black;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* globals */
+body {
+ 
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.dark-mode{
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainDark);
+  background: var(--mainWhite);
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  border:3px solid black;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
 }
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  background: var(--mainDark);
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  border:3px solid black;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.sideBar{
+float: right;
+width: 100%;
+padding: 20px;
+height: 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+background-color: var(--mainDark);
+color: var(--mainWhite)
+
+
+}
+.input-text {
+ background-color: var(--mainWhite)
+}
+.content-holder-light{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+background-color: var(--mainWhite);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-holder-dark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+background-color: var(--mainDark);
 }
